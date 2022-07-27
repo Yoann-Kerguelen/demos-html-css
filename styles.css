@@ -1,0 +1,19 @@
+#id-un {
+    color: green;
+    background: pink;
+    font-size: 1.2em;
+}
+
+.class-un{
+    opacity: .2;
+    transition: all 250ms;    
+}
+
+.class-un:hover{
+    opacity: 1;
+}
+
+p{
+    font-weight: bold;
+    border: 1px solid darksalmon;
+}

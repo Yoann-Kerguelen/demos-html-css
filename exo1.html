@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>EXO 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./wiki_style.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span id="id_title">
+            <h1><u>Flutter (logiciel)</u>
+                <a href="https://flutter.dev/">
+                    <img alt="Qries" src="https://logowik.com/content/uploads/images/flutter5786.jpg" width=200"
+                        height="150">
+                </a>
+            </h1>
+        </span>
+    </header>
+
+    <nav>
+        <p>Flutter est un kit de développement logiciel (SDK) d'interface utilisateur open-source créé par Google.
+            Il est utilisé pour développer des applications pour Android, iOS, Linux, Mac, Windows, Google Fuchsia
+            et le web à partir d'une seule base de code.</p>
+
+        <p> La première version de Flutter était connue sous le nom de code "Sky" et fonctionnait sur le système
+            d'exploitation Android. Elle a été dévoilée lors du sommet des développeurs Dart de 20154, avec
+            l'intention déclarée de pouvoir effectuer un rendu cohérent à 120 images par seconde5 . Lors du discours
+            d'ouverture des Google Developer Days à Shanghai, Google a annoncé la sortie de Flutter Release Preview
+            2 qui est la dernière grande version avant Flutter 1.0. Le 4 décembre 2018, Flutter 1.0 a été publié
+            lors de l'événement Flutter Live, ce qui représente la première version "stable" du Framework. Le 11
+            décembre 2019, Flutter 1.12 a été publié lors de l'événement Flutter Interactive6 .</p>
+
+        <p> Le 6 mai 2020, le SDK de Dart en version 2.8 et celui de Flutter en version 1.17.0 sont sortis. La
+            prise
+            en charge de l'API Metal a été ajoutée, améliorant les performances des appareils iOS (environ 50 %), de
+            nouveaux widgets Material et de nouveaux outils de suivi de réseau.</p>
+
+        <p> Le 3 mars 2021, l'équipe de développement de Flutter a annoncé la release de son SDK en version 2.0.0.
+            De nombreux bugs et problèmes de jeunesse ont été résolus à cette occasion (ajout de null safety par
+            exemple). De plus, l'utilisation de Windows, Linux et la version Web sont ajoutés à la release. </p>
+    </nav>
+
+    <section>
+
+        <article>
+            <h2>
+                <u class="class-title">L'Architecture du framework </u>
+            </h2>
+            <p>
+                Les principales composantes de Flutter sont les suivantes :</p>
+            <ul>
+                <li>
+                    La plate-forme Dart
+                </li>
+                <li>
+                    Le Moteur Flutter
+                </li>
+                <li>
+                    La Bibliothèque Foundation
+                </li>
+                <li>
+                    Les Widgets spécifiques à la conception
+                </li>
+            </ul>
+            <article>
+                <h3>
+                    <g class="class-title2">
+                        La Plate-forme Dart
+                    </g>
+                </h3>
+                <p>
+                    Les applications Flutter sont écrites en Dart et utilisent de nombreuses fonctionnalités
+                    avancées du
+                    langage.</p>
+
+                <p> Sur Windows, macOS et Linux7 , Flutter est exécuté par la machine virtuelle Dart et dispose
+                    d'un
+                    moteur d'exécution just-in-time. Lors de l'écriture et du débogage d'une application, Flutter
+                    utilise la compilation "Just In Time", qui permet de la recharge à chaud "hot reload", avec
+                    laquelle
+                    les modifications des fichiers sources peuvent être injectées dans une application en cours
+                    d'exécution. Flutter étend cette possibilité avec la prise en charge de la recharge à chaud
+                    stateful, où dans la plupart des cas les modifications du code source peuvent être reflétées
+                    immédiatement dans l'application en cours d'exécution sans nécessiter de redémarrage ou de perte
+                    d'état8.</p>
+
+                <p>Afin d'avoir de meilleures performances sur les plateformes Android et iOS, les
+                    applications
+                    Flutter
+                    sont compilés avec une compilation ahead-of-time (AOT)9.
+                </p>
+
+            </article>
+
+            <article>
+                <h3>
+                    <g class="class-title2">
+                        Le Moteur de Flutter
+                    </g>
+                </h3>
+                <p>
+                    Le moteur de Flutter, écrit principalement en C++, fournit un support de rendu de bas niveau en
+                    utilisant la bibliothèque graphique Skia de Google. De plus, il s'interface avec des SDK spécifiques
+                    à la plate-forme, tels que ceux fournis par Android et iOS. Le moteur Flutter est un runtime
+                    portable pour l'hébergement d'applications Flutter. Il met en œuvre les bibliothèques de base de
+                    Flutter, y compris l'animation et les graphiques, les entrées/sorties de fichiers et de réseau, le
+                    support de l'accessibilité, l'architecture des plugins, et une chaîne d'outils d'exécution et de
+                    compilation Dart. La plupart des développeurs interagissent avec Flutter via le Flutter Framework,
+                    qui fournit un cadre réactif, et un ensemble de widgets de plate-forme, de mise en page et de
+                    foundation.</p>
+            </article>
+
+            <article>
+                <h3>
+                    <g class="class-title2">
+                        La Bibliothèque Foundation
+                    </g>
+                </h3>
+                <p>
+                    La bibliothèque Foundation, écrite en Dart, fournit des classes et des fonctions de base qui sont
+                    utilisées pour construire des applications utilisant Flutter, comme une API pour communiquer avec le
+                    moteur. </p>
+            </article>
+
+            <article>
+                <h3>
+                    <g class="class-title2">
+                        Les Widgets
+                    </g>
+                </h3>
+                <p>
+                    Le Framework Flutter contient deux styles de widgets, les widgets Material Design qui implémentent
+                    le design de Google, et les widgets Cupertino qui implémentent l'interface d'iOS d'Apple. .</p>
+
+            </article>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <span style="color: aqua;">Yoann Kerguelen ©Copyright, Tous droits reversés</span>
+        <span> <a href="https://fr.wikipedia.org/wiki/Flutter_(logiciel)"> lien vers la page d'origine wiki</a> </span>
+    </footer>
+
+</body>
+
+</html>

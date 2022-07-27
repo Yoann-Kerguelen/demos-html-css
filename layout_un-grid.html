@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 1</title>
+
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-rows: 1fr 64px;
+            min-height: 100vh;
+        }
+        footer { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            background: #EC9A29;
+        }
+        #main-container { 
+            display: grid;
+            grid-template-columns: 128px 1fr;
+            grid-template-areas:
+            "nav main";
+        }
+        nav { 
+            grid-area: nav;
+            background: #0F8B8D;
+        }
+        main {
+            grid-area: main ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .middle-block {
+            width: 1024px;
+            height: 256px;
+            background: #A8201A;
+        }
+    </style>
+
+</head>
+<body>
+	<!-- BODY -->
+	<div id='main-container'>
+		<!-- SIDEBAR -->
+		<nav>
+			<div></div>
+		</nav>
+
+		<!-- MAIN -->
+		<main>
+			<div class='middle-block'></div>
+		</main>
+	</div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div></div>
+	</footer>
+</body>
+</html>

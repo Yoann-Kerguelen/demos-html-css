@@ -1,0 +1,21 @@
+#id_title {
+    color: blue;
+    background: pink;
+    font-size: 1.2em;
+}
+
+.class-title {
+    color: green;
+}
+
+.class-title2 {
+    color: pink;
+    width: max-content;
+    margin: 8px;
+    padding: 4px;
+}
+
+p {
+    font-weight: bold;
+    border: 1px solid blue;
+}

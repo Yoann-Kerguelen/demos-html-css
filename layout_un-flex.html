@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flex Layout 1</title>
+
+	<style>
+		body {
+			 margin: 0; 
+			 display: flex;
+			 flex-direction: column;
+		}
+		footer {
+			width: 100%;
+			height: 64px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			background: #EC9A29;
+		}
+		nav {
+			width: 128px;
+			min-height: calc(100vh - 64px);
+			background: #0F8B8D;
+		}
+		#main-container { 
+			display: flex;
+		}
+		main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-grow: 1;
+		}
+		.middle-block {
+            width: 1024px;
+            height: 256px;
+            background: #A8201A;
+        }
+
+	</style>
+
+</head>
+<body>
+	<!-- BODY -->
+	<div id='main-container'>
+		<!-- SIDEBAR -->
+		<nav>
+			<div></div>
+		</nav>
+
+		<!-- MAIN -->
+		<main>
+			<div class='middle-block'></div>
+		</main>
+	</div>
+
+	<!-- footer -->
+	<footer>
+		<div></div>
+	</footer>
+</body>
+</html>

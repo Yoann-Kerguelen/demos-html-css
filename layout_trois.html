@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {margin: 0 ; min-height: 100vh;}
+        header {
+            height: 64px;
+            background: orange;
+        }
+        main { padding: 64px 128px; }
+
+        /* BLOCK CLASSES */
+        .block {
+            height: 256px;
+            background: red;
+        }
+        .semi-block{
+            width: 50%;
+            height: 256px;
+            background: red;
+        }
+        .eggplant {
+            width: 25%;
+            height: 256px;
+            background: purple;
+        }
+
+        /* UTILS */
+        .flex { display: flex }
+        .flex-col { flex-direction: column }
+        .flex-row-reverse { flex-direction: row-reverse }
+        .gap-64{ gap: 64px }
+    </style>
+
+</head>
+<body>
+    <header></header>
+
+    <main class='flex flex-col gap-64'>
+        <div class='block'></div>
+        <div class='flex gap-64'>
+            <div class='semi-block'></div>
+            <div class='eggplant'></div>
+        </div>
+        <div class='flex flex-row-reverse gap-64'>
+            <div class='semi-block'></div>
+            <div class='eggplant'></div>
+        </div>
+
+        <div class='block'></div>
+    </main>
+</body>
+</html>

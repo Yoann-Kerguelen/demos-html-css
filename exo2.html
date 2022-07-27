@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>EXO2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <center>
+        <header>
+            <H1>
+                Formulaire d'inscription
+            </H1>
+        </header>
+
+        <section>
+            <article>
+                <form id="button_validate">
+                    <p>nom</p>
+                    <span>
+                        <input type="text" name="nom" form="button_validate" minlength="3" placeholder="nom" required>
+                    </span>
+                    <p>prenom</p>
+                    <span>
+                        <input type="text" name="prenom" form="button_validate" minlength="3" required>
+                    </span>
+                    <p>tél</p>
+                    <span>
+                        <input type="tel" name="telephone" form="button_validate" minlength="10" maxlength="10"
+                            required>
+                    </span>
+                    <p>mot de passe</p>
+                    <span>
+                        <input type="password" name="mdp" form="button_validate" minlength="6" required>
+                    </span>
+                    <p>email</p>
+                    <span>
+                        <input type="email" name="email" form="button_validate" required>
+                    </span>
+                    <p>
+                        <button id="btn" name="button_validate" form="button_validate" required>
+                            Valider le formulaire</button>
+                    </p>
+
+                </form>
+            </article>
+        </section>
+    </center>
+
+</body>
+
+</html>
